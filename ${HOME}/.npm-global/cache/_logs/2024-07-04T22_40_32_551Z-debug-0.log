@@ -1,0 +1,101 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.5.2
+2 info using node@v20.13.1
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:C:\Program Files\nodejs\node_modules\npm\npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:C:\Users\gemin\Documents\Components\radio-button\.npmrc Completed in 1ms
+10 timing config:load:project Completed in 28ms
+11 timing config:load:file:C:\Users\gemin\.npmrc Completed in 1ms
+12 timing config:load:user Completed in 1ms
+13 timing config:load:file:C:\Users\gemin\Documents\Components\radio-button\${HOME}\.npm-global\etc\npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:setEnvs Completed in 1ms
+16 timing config:load Completed in 35ms
+17 timing npm:load:configload Completed in 35ms
+18 timing config:load:flatten Completed in 3ms
+19 timing npm:load:mkdirpcache Completed in 0ms
+20 timing npm:load:mkdirplogs Completed in 1ms
+21 verbose title npm publish
+22 verbose argv "publish"
+23 timing npm:load:setTitle Completed in 0ms
+24 timing npm:load:display Completed in 1ms
+25 verbose logfile logs-max:10 dir:C:\Users\gemin\Documents\Components\radio-button\${HOME}\.npm-global\cache\_logs\2024-07-04T22_40_32_551Z-
+26 verbose logfile C:\Users\gemin\Documents\Components\radio-button\${HOME}\.npm-global\cache\_logs\2024-07-04T22_40_32_551Z-debug-0.log
+27 timing npm:load:logFile Completed in 2ms
+28 timing npm:load:timers Completed in 0ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 61ms
+31 verbose publish [ '.' ]
+32 silly logfile done cleaning log files
+33 timing arborist:ctor Completed in 0ms
+34 timing arborist:ctor Completed in 0ms
+35 notice
+36 notice 📦  radio-button@0.0.0
+37 notice === Tarball Contents ===
+38 notice 290B   .editorconfig                                                                                                                                                                          
+38 notice 134B   .vscode/extensions.json                                                                                                                                                                
+38 notice 490B   .vscode/launch.json                                                                                                                                                                    
+38 notice 980B   .vscode/tasks.json                                                                                                                                                                     
+38 notice 10.3kB ${HOME}/.npm-global/cache/_cacache/content-v2/sha512/dd/43/353bc3c2d34b6b3371b2eae2859db232eb67f721049fb2c7ab04baf1da1feedef6db67b6e96281fb640f0b6ba6e60ba3b65b3a925f6af84336024705d183
+38 notice 269B   ${HOME}/.npm-global/cache/_cacache/index-v5/ef/db/e143e0bbd4625ede1640e1e1c944352d88916b54f3622e036bf6591be303                                                                         
+38 notice 1.9kB  ${HOME}/.npm-global/cache/_logs/2024-07-04T22_17_46_072Z-debug-0.log                                                                                                                   
+38 notice 7.2kB  ${HOME}/.npm-global/cache/_logs/2024-07-04T22_21_55_142Z-debug-0.log                                                                                                                   
+38 notice 4.3kB  ${HOME}/.npm-global/cache/_logs/2024-07-04T22_22_24_225Z-debug-0.log                                                                                                                   
+38 notice 1.9kB  ${HOME}/.npm-global/cache/_logs/2024-07-04T22_40_32_551Z-debug-0.log                                                                                                                   
+38 notice 0B     ${HOME}/.npm-global/cache/_update-notifier-last-checked                                                                                                                                
+38 notice 1.1kB  README.md                                                                                                                                                                              
+38 notice 3.9kB  angular.json                                                                                                                                                                           
+38 notice 1.1kB  package.json                                                                                                                                                                           
+38 notice 167B   projects/radio-button/ng-package.json                                                                                                                                                  
+38 notice 228B   projects/radio-button/package.json                                                                                                                                                     
+38 notice 1.1kB  projects/radio-button/README.md                                                                                                                                                        
+38 notice 34B    projects/radio-button/src/lib/radio-button-group/radio-button-group.component.html                                                                                                     
+38 notice 0B     projects/radio-button/src/lib/radio-button-group/radio-button-group.component.scss                                                                                                     
+38 notice 687B   projects/radio-button/src/lib/radio-button-group/radio-button-group.component.spec.ts                                                                                                  
+38 notice 293B   projects/radio-button/src/lib/radio-button-group/radio-button-group.component.ts                                                                                                       
+38 notice 220B   projects/radio-button/src/public-api.ts                                                                                                                                                
+38 notice 490B   projects/radio-button/tsconfig.lib.json                                                                                                                                                
+38 notice 412B   projects/radio-button/tsconfig.lib.prod.json                                                                                                                                           
+38 notice 449B   projects/radio-button/tsconfig.spec.json                                                                                                                                               
+38 notice 15.1kB public/favicon.ico                                                                                                                                                                     
+38 notice 49B    src/app/app.component.html                                                                                                                                                             
+38 notice 0B     src/app/app.component.scss                                                                                                                                                             
+38 notice 963B   src/app/app.component.spec.ts                                                                                                                                                          
+38 notice 417B   src/app/app.component.ts                                                                                                                                                               
+38 notice 318B   src/app/app.config.ts                                                                                                                                                                  
+38 notice 80B    src/app/app.routes.ts                                                                                                                                                                  
+38 notice 310B   src/index.html                                                                                                                                                                         
+38 notice 256B   src/main.ts                                                                                                                                                                            
+38 notice 81B    src/styles.scss                                                                                                                                                                        
+38 notice 277B   tsconfig.app.json                                                                                                                                                                      
+38 notice 981B   tsconfig.json                                                                                                                                                                          
+38 notice 287B   tsconfig.spec.json                                                                                                                                                                     
+39 notice === Tarball Details ===
+40 notice name:          radio-button                            
+40 notice version:       0.0.0                                   
+40 notice filename:      radio-button-0.0.0.tgz                  
+40 notice package size:  23.2 kB                                 
+40 notice unpacked size: 57.1 kB                                 
+40 notice shasum:        dee11a905ec20d74323da32a8f88200861671ad0
+40 notice integrity:     sha512-UGjOpAPrRoJLy[...]pj+FeKg2uh1mw==
+40 notice total files:   38                                      
+41 notice
+42 timing command:publish Completed in 443ms
+43 verbose stack Error: This command requires you to be logged in to https://pkgs.dev.azure.com/gemini2022/***/_packaging/common-libraries/npm/registry/
+43 verbose stack     at Publish.exec (C:\Program Files\nodejs\node_modules\npm\lib\commands\publish.js:113:29)
+43 verbose stack     at async module.exports (C:\Program Files\nodejs\node_modules\npm\lib\cli-entry.js:61:5)
+44 verbose cwd C:\Users\gemin\Documents\Components\radio-button
+45 verbose Windows_NT 10.0.19045
+46 verbose node v20.13.1
+47 verbose npm  v10.5.2
+48 error code ENEEDAUTH
+49 error need auth This command requires you to be logged in to https://pkgs.dev.azure.com/gemini2022/***/_packaging/common-libraries/npm/registry/
+50 error need auth You need to authorize this machine using `npm adduser`
+51 verbose exit 1
+52 timing npm Completed in 952ms
+53 verbose code 1
+54 error A complete log of this run can be found in: C:\Users\gemin\Documents\Components\radio-button\${HOME}\.npm-global\cache\_logs\2024-07-04T22_40_32_551Z-debug-0.log

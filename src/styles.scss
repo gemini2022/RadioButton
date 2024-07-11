@@ -1,1 +1,159 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+
+    /* ===================== (DIMENSIONS) ===================== */
+
+    /* Radio Button Group */
+    --radio-button-group-margin: 0;
+    --radio-button-group-padding: 0;
+    // --radio-button-group-width: 0;
+    --radio-button-group-height: 174px;
+    --radio-button-group-layout: vertical;
+    --radio-button-group-buttons-alignment: start;
+
+
+    /* Button */
+    --radio-button-size: 20px;
+    --radio-button-border-width: 2px;
+
+
+    /* Dot */
+    --radio-button-dot-size: 10px;
+
+
+    /* Label */
+    --radio-button-label-distance: 12px;
+    --radio-button-label-position: after;
+    --radio-button-label-font-size: 14px;
+    --radio-button-label-font-family: Arial, Helvetica, sans-serif;
+
+
+    /* Overlay */
+    --radio-button-overlay-size: 36px;
+
+    
+
+
+
+    /* ===================== (COLORS) ===================== */
+
+    /* Button */
+    --radio-button-border-color: #44474e;
+    --radio-button-background-color: white;
+
+        /* Checked */
+        --radio-button-checked-border-color: #343dff;
+        --radio-button-checked-background-color: white;
+
+
+    /* Dot */
+    --radio-button-dot-color: #343dff;
+
+
+    /* Label */
+    --radio-button-label-color: #1a1b1f;
+
+        /* Checked */
+        --radio-button-checked-label-color: #1a1b1f;
+
+
+
+
+    
+    /* ===================== (HOVER COLORS) ===================== */
+
+    /* Button */
+    --radio-button-border-hover-color: #1a1b1f;
+    --radio-button-background-hover-color: white;
+
+        /* Checked */
+        --radio-button-checked-border-hover-color: #343dff;
+        --radio-button-checked-background-hover-color: white;
+
+        /* Focused */
+        --radio-button-focused-border-hover-color: #343dff;
+        --radio-button-focused-background-hover-color: white;
+
+
+    /* Dot */
+    --radio-button-dot-hover-color: #343dff;
+
+        /* Focused */
+        --radio-button-focused-dot-hover-color: #343dff;
+
+
+    /* Label */
+    --radio-button-label-hover-color: #1a1b1f;
+
+        /* Checked */
+        --radio-button-checked-label-hover-color: #1a1b1f;
+
+        /* Focused */
+        --radio-button-focused-label-hover-color: #1a1b1f;
+
+
+    /* Overlay */
+    --radio-button-overlay-hover-color: rgba(141, 136, 148, 0.1);
+
+        /* Checked */
+        --radio-button-checked-overlay-hover-color: rgba(145, 139, 255, 0.1);
+
+        /* Focused */
+        --radio-button-focused-overlay-hover-color: rgba(111, 109, 255, 0.19);
+
+
+
+
+
+    /* ===================== (ACTIVE COLORS) ===================== */
+
+    /* Button */
+    --radio-button-border-active-color: #030303;
+    --radio-button-background-active-color: white;
+
+        /* Checked */
+        --radio-button-checked-border-active-color: #343dff;
+        --radio-button-checked-background-active-color: white;
+
+
+    /* Dot */
+    --radio-button-dot-active-color: #343dff;
+
+
+    /* Label */
+    --radio-button-label-active-color: #1a1b1f;
+
+        /* Checked */
+        --radio-button-checked-label-active-color: #1a1b1f;
+
+
+    /* Overlay */
+    --radio-button-overlay-active-color: rgba(103, 101, 107, 0.22);
+
+        /* Checked */
+        --radio-button-checked-overlay-active-color: rgba(87, 87, 255, 0.30);
+
+
+
+
+    
+    /* ===================== (FOCUS COLORS) ===================== */
+
+    /* Overlay */
+    --radio-button-overlay-focus-color: rgba(111, 109, 255, 0.19);
+    --radio-button-overlay-focus-visible-color: rgba(111, 109, 255, 0.19);
+
+
+
+
+
+    /* ===================== (DISABLED COLORS) ===================== */
+
+    /* Button */
+    --radio-button-border-disabled-color: #a7a6aa;
+    --radio-button-background-disabled-color: white;
+
+
+    /* Label */
+    --radio-button-label-disabled-color: #a7aeb8;
+    
+}

@@ -1,0 +1,40 @@
+<label #radioButton
+       class="radio-button" 
+       [attr.disabled]="disabled() || radioButtonGroup.disabled">
+
+    <input type="radio"
+           [checked]="checked"
+           (blur)="hasFocus = false"
+           (focus)="hasFocus = true"
+           [name]="radioButtonGroup.name"
+           (change)="radioButtonGroup.onChange(this.value())"
+           [disabled]="disabled() || radioButtonGroup.disabled">
+
+
+
+    @if (labelPositionAfter) {
+        <div class="button-border"
+            [ngStyle]="{'margin-right': labelDistance,
+                        'width': radioButtonGroup.buttonSize(),
+                        'height': radioButtonGroup.buttonSize(),
+                        'padding': radioButtonGroup.buttonBorderWidth()}">
+            <div class="button-background"></div>
+        </div>
+    }
+
+    <div class="label-container"
+         [ngStyle]="{'font-size': radioButtonGroup.labelFontSize(),
+                     'font-family': radioButtonGroup.labelFontFamily()}">
+        <ng-content></ng-content>
+    </div>
+
+    @if (!labelPositionAfter) {
+        <div class="button-border"
+            [ngStyle]="{'margin-left': labelDistance,
+                        'width': radioButtonGroup.buttonSize(),
+                        'height': radioButtonGroup.buttonSize(),
+                        'padding': radioButtonGroup.buttonBorderWidth()}">
+            <div class="button-background"></div>
+        </div>
+    }
+</label>

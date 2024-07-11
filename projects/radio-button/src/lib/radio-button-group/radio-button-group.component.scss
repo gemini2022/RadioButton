@@ -1,0 +1,10 @@
+.radio-button-group {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: var(--flex-direction);
+    width: var(--radio-button-group-width);
+    margin: var(--radio-button-group-margin);
+    height: var(--radio-button-group-height);
+    padding: var(--radio-button-group-padding);
+    align-items: var(--radio-button-group-buttons-alignment);
+}
