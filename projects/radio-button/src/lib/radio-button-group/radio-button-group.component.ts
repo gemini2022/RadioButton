@@ -28,6 +28,7 @@ export class RadioButtonGroupComponent implements ControlValueAccessor {
   public labelFontSize = input<string>();
   public labelFontFamily = input<string>();
   public buttonBorderWidth = input<string>();
+  public radioButtonCursor = input<string>();
   public labelPosition = input<'before' | 'after'>();
   public layout = input<'horizontal' | 'vertical'>();
   public buttonsAlignment = input<'start' | 'center' | 'end'>();

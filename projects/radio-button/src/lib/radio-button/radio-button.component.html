@@ -1,15 +1,13 @@
 <label #radioButton
-       class="radio-button" 
-       [attr.disabled]="disabled() || radioButtonGroup.disabled">
+       class="radio-button"
+       [attr.disabled]="disabled() || radioButtonGroup.disabled"
+       [ngStyle]="{'cursor': radioButtonGroup.radioButtonCursor()}">
 
     <input type="radio"
            [checked]="checked"
-           (blur)="hasFocus = false"
-           (focus)="hasFocus = true"
            [name]="radioButtonGroup.name"
-           (change)="radioButtonGroup.onChange(this.value())"
+           (change)="radioButtonGroup.onChange(value())"
            [disabled]="disabled() || radioButtonGroup.disabled">
-
 
 
     @if (labelPositionAfter) {
@@ -18,7 +16,9 @@
                         'width': radioButtonGroup.buttonSize(),
                         'height': radioButtonGroup.buttonSize(),
                         'padding': radioButtonGroup.buttonBorderWidth()}">
-            <div class="button-background"></div>
+            <div class="button-background">
+                <div class="dot"></div>
+            </div>
         </div>
     }
 
@@ -34,7 +34,9 @@
                         'width': radioButtonGroup.buttonSize(),
                         'height': radioButtonGroup.buttonSize(),
                         'padding': radioButtonGroup.buttonBorderWidth()}">
-            <div class="button-background"></div>
+            <div class="button-background">
+                <div class="dot"></div>
+            </div>
         </div>
     }
 </label>

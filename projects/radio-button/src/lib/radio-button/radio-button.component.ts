@@ -17,7 +17,6 @@ export class RadioButtonComponent {
 
   // Private
   protected checked!: boolean;
-  protected hasFocus!: boolean;
   protected labelDistance!: string;
   protected labelPositionAfter!: boolean;
   private radioButton = viewChild<ElementRef<HTMLElement>>('radioButton');
