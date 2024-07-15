@@ -11,12 +11,12 @@
 
 
     @if (labelPositionAfter) {
-        <div class="button-border"
+        <div class="radio-button-border"
             [ngStyle]="{'margin-right': labelDistance,
                         'width': radioButtonGroup.buttonSize(),
                         'height': radioButtonGroup.buttonSize(),
                         'padding': radioButtonGroup.buttonBorderWidth()}">
-            <div class="button-background">
+            <div class="radio-button-background">
                 <div class="dot"></div>
             </div>
         </div>
@@ -29,12 +29,12 @@
     </div>
 
     @if (!labelPositionAfter) {
-        <div class="button-border"
+        <div class="radio-button-border"
             [ngStyle]="{'margin-left': labelDistance,
                         'width': radioButtonGroup.buttonSize(),
                         'height': radioButtonGroup.buttonSize(),
                         'padding': radioButtonGroup.buttonBorderWidth()}">
-            <div class="button-background">
+            <div class="radio-button-background">
                 <div class="dot"></div>
             </div>
         </div>

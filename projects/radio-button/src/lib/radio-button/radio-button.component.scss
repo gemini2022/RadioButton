@@ -15,7 +15,7 @@ input {
 
 
 
-.button-border {
+.radio-button-border {
     display: flex;
     border-radius: 50%;
     position: relative;
@@ -40,7 +40,7 @@ input {
 
 
 
-.button-background {
+.radio-button-background {
     width: 100%;
     height: 100%;
     display: flex;
@@ -64,6 +64,7 @@ input {
 
 
 .label-container {
+    margin-bottom: -1px;
     color: var(--radio-button-label-color);
     font-size: var(--radio-button-label-font-size);
     font-family: var(--radio-button-label-font-family);
@@ -75,15 +76,15 @@ input {
 
 // Checked
 
-input:checked:not(:disabled)~.button-border {
+input:checked:not(:disabled)~.radio-button-border {
     background: var(--radio-button-checked-border-color);
 }
 
-input:checked:not(:disabled)~.button-border .button-background {
+input:checked:not(:disabled)~.radio-button-border .radio-button-background {
     background: var(--radio-button-checked-background-color);
 }
 
-input:checked:not(:disabled)~.button-border .button-background .dot {
+input:checked:not(:disabled)~.radio-button-border .radio-button-background .dot {
     display: block;
 }
 
@@ -97,11 +98,11 @@ input:checked:not(:disabled)~.label-container {
 
 // Hover
 
-.radio-button:hover:not(:active) input:not(:checked):not(:disabled)~.button-border {
+.radio-button:hover:not(:active) input:not(:checked):not(:disabled)~.radio-button-border {
     background: var(--radio-button-border-hover-color);
 }
 
-.radio-button:hover:not(:active) input:not(:checked):not(:disabled)~.button-border .button-background {
+.radio-button:hover:not(:active) input:not(:checked):not(:disabled)~.radio-button-border .radio-button-background {
     background: var(--radio-button-background-hover-color);
 }
 
@@ -109,7 +110,7 @@ input:checked:not(:disabled)~.label-container {
     color: var(--radio-button-label-hover-color);
 }
 
-.radio-button:hover:not(:active) input:not(:checked):not(:disabled):not(:focus)~.button-border::before {
+.radio-button:hover:not(:active) input:not(:checked):not(:disabled):not(:focus)~.radio-button-border::before {
     background: var(--radio-button-overlay-hover-color);
 }
 
@@ -119,15 +120,15 @@ input:checked:not(:disabled)~.label-container {
 
 // Hover (Checked)
 
-.radio-button:hover:not(:active) input:checked:not(:disabled)~.button-border {
+.radio-button:hover:not(:active) input:checked:not(:disabled)~.radio-button-border {
     background: var(--radio-button-checked-border-hover-color);
 }
 
-.radio-button:hover:not(:active) input:checked:not(:disabled)~.button-border .button-background {
+.radio-button:hover:not(:active) input:checked:not(:disabled)~.radio-button-border .radio-button-background {
     background: var(--radio-button-checked-background-hover-color);
 }
 
-.radio-button:hover:not(:active) input:checked:not(:disabled)~.button-border .button-background .dot {
+.radio-button:hover:not(:active) input:checked:not(:disabled)~.radio-button-border .radio-button-background .dot {
     background: var(--radio-button-dot-hover-color);
 }
 
@@ -135,7 +136,7 @@ input:checked:not(:disabled)~.label-container {
     color: var(--radio-button-checked-label-hover-color);
 }
 
-.radio-button:hover:not(:active) input:checked:not(:disabled):not(:focus)~.button-border::before {
+.radio-button:hover:not(:active) input:checked:not(:disabled):not(:focus)~.radio-button-border::before {
     background: var(--radio-button-checked-overlay-hover-color);
 }
 
@@ -145,11 +146,11 @@ input:checked:not(:disabled)~.label-container {
 
 // Active
 
-.radio-button:active input:not(:checked):not(:disabled)~.button-border {
+.radio-button:active input:not(:checked):not(:disabled)~.radio-button-border {
     background: var(--radio-button-border-active-color);
 }
 
-.radio-button:active input:not(:checked):not(:disabled)~.button-border .button-background {
+.radio-button:active input:not(:checked):not(:disabled)~.radio-button-border .radio-button-background {
     background: var(--radio-button-background-active-color);
 }
 
@@ -157,7 +158,7 @@ input:checked:not(:disabled)~.label-container {
     color: var(--radio-button-label-active-color);
 }
 
-.radio-button:active input:not(:checked):not(:disabled)~.button-border::before {
+.radio-button:active input:not(:checked):not(:disabled)~.radio-button-border::before {
     background: var(--radio-button-overlay-active-color);
 }
 
@@ -167,15 +168,15 @@ input:checked:not(:disabled)~.label-container {
 
 // Active (Checked)
 
-.radio-button:active input:checked:not(:disabled)~.button-border {
+.radio-button:active input:checked:not(:disabled)~.radio-button-border {
     background: var(--radio-button-checked-border-active-color);
 }
 
-.radio-button:active input:checked:not(:disabled)~.button-border .button-background {
+.radio-button:active input:checked:not(:disabled)~.radio-button-border .radio-button-background {
     background: var(--radio-button-checked-background-active-color);
 }
 
-.radio-button:active input:checked:not(:disabled)~.button-border .button-background .dot {
+.radio-button:active input:checked:not(:disabled)~.radio-button-border .radio-button-background .dot {
     background: var(--radio-button-dot-active-color);
 }
 
@@ -183,7 +184,7 @@ input:checked:not(:disabled)~.label-container {
     color: var(--radio-button-checked-label-active-color);
 }
 
-.radio-button:active input:checked:not(:disabled)~.button-border::before {
+.radio-button:active input:checked:not(:disabled)~.radio-button-border::before {
     background: var(--radio-button-checked-overlay-active-color);
 }
 
@@ -193,7 +194,7 @@ input:checked:not(:disabled)~.label-container {
 
 // Focus
 
-input:checked:focus~.button-border::before {
+input:checked:focus~.radio-button-border::before {
     background: var(--radio-button-checked-overlay-focus-color);
 }
 
@@ -203,7 +204,7 @@ input:checked:focus~.button-border::before {
 
 // Focus-Visible
 
-input:checked:focus-visible~.button-border::before {
+input:checked:focus-visible~.radio-button-border::before {
     background: var(--radio-button-checked-overlay-focus-visible-color);
 }
 
@@ -217,15 +218,15 @@ input:checked:focus-visible~.button-border::before {
     cursor: default;
 }
 
-input:disabled~.button-border {
+input:disabled~.radio-button-border {
     background: var(--radio-button-border-disabled-color);
 }
 
-input:disabled~.button-border .button-background {
+input:disabled~.radio-button-border .radio-button-background {
     background: var(--radio-button-background-disabled-color);
 }
 
-input:disabled~.button-border .button-background .dot {
+input:disabled~.radio-button-border .radio-button-background .dot {
     display: none;
 }
 
