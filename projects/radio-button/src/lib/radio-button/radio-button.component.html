@@ -5,6 +5,7 @@
 
     <input type="radio"
            [checked]="checked"
+           class="radio-button-input"
            [name]="radioButtonGroup.name"
            (change)="radioButtonGroup.onChange(value())"
            [disabled]="disabled() || radioButtonGroup.disabled">
@@ -17,12 +18,12 @@
                         'height': radioButtonGroup.buttonSize(),
                         'padding': radioButtonGroup.buttonBorderWidth()}">
             <div class="radio-button-background">
-                <div class="dot"></div>
+                <div class="radio-button-dot"></div>
             </div>
         </div>
     }
 
-    <div class="label-container"
+    <div class="radio-button-label-container"
          [ngStyle]="{'font-size': radioButtonGroup.labelFontSize(),
                      'font-family': radioButtonGroup.labelFontFamily()}">
         <ng-content></ng-content>
@@ -35,7 +36,7 @@
                         'height': radioButtonGroup.buttonSize(),
                         'padding': radioButtonGroup.buttonBorderWidth()}">
             <div class="radio-button-background">
-                <div class="dot"></div>
+                <div class="radio-button-dot"></div>
             </div>
         </div>
     }
